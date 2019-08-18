@@ -61,10 +61,12 @@ class MonsterInfo:
     m_class: str
     m_type: str
 
+
 def print_new_monster_info_dc(monster_info: MonsterInfo):
     print("\nMonster: {monster_name}".format(monster_name=monster_info.name.title()))
     print("Class: {monster_class}".format(monster_class=monster_info.m_class.title()))
     print("Type: {monster_type}\n".format(monster_type=monster_info.m_type.title()))
+
 
 print_new_monster_info_dc(
     MonsterInfo(
