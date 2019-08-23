@@ -1,7 +1,7 @@
-#Tuples
-#Tuples are lists that can never be changed
-#Lists are dynamic; can remove/append
-#Tuples use () instead of [list]
+# Tuples
+# Tuples are lists that can never be changed
+# Lists are dynamic; can remove/append
+# Tuples use () instead of [list]
 # can still use for loop
 
 colors = ('chartreuse', 'mahogany', 'greige')
@@ -13,13 +13,13 @@ print("\nThe available colors are:")
 for color in colors:
     print("- {all}".format(all=color))
 
-#Str numbers
+# Str numbers
 numba = 69
 print("My favorite numba is {num}. ;)".format(
     num=str(numba)
 ))
 
-#Gymast score
+# Gymast score
 score = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
 print("The lowest possible score is {low}, and the highest possible score is {high}".format(
     low=score[0],
@@ -27,12 +27,11 @@ print("The lowest possible score is {low}, and the highest possible score is {hi
 ))
 for numbas in score:
     print("A judge can give a gymnast {all} points.".format(
-    all=numbas
-))
-
+        all=numbas
+    ))
 
 ##### Gymast score
-#if else version so the sentence has correct grammar
+# if else version so the sentence has correct grammar
 score = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
 print("The lowest possible score is {low}, and the highest possible score is {high}".format(
     low=score[0],
@@ -43,9 +42,7 @@ for numbas in score:
         print("A judge can give a gymnast {single} point.".format(
             single=numbas
         ))
-    else: 
+    else:
         print("A judge can give a gymnast {all} points.".format(
-        all=numbas
+            all=numbas
         ))
-
-

@@ -1,6 +1,4 @@
-# aliens loop
-# for loop recap:
-# iterating through EVERY item in the list, that's
+rating through EVERY item in the list, that's
 # the first answer was wrong "50"
 # if statement is a branching statements is a tool
 # lets you execute conditional logic in your program
@@ -50,6 +48,7 @@ while strength < 12:
     ))
     strength += 2
 print("\nYew tew strong.")
+
 
 # input function "input('')" = standard input or TERMINAL interaction
 # standard output is printing something
