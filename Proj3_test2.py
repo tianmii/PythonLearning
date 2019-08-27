@@ -21,9 +21,9 @@ class Coin:
     value_per_coin: int
 
     # GEYBWEE WAS HEUH
-     @property
-     def num_coins(self):
-         return self.total_grams  / self.gram_per_coin
+    @property
+    def num_coins(self):
+        return self.total_grams  / self.gram_per_coin
 
 
 penny = Coin(name="penny", gram_per_coin=2.5, value_per_coin=1, total_grams=None)
