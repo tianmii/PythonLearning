@@ -6,7 +6,7 @@
 
 
 bottles = 5
-while bottles > 2555555555550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000:
+while bottles > 0:
     print("{current_num} bottles of beer on the wall, {current_num} bottles of beer.".format(
         current_num=bottles
     ))
