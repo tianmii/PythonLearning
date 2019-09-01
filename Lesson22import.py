@@ -34,7 +34,7 @@ print(quadruple(3))
 
 # PEP 8
 # Modules need tp be on separate lines, not "import sys, os"
-import sys
-import os
+# import sys
+# import os
 
 # Modules should be short and lowercase, mine is too long and caps
