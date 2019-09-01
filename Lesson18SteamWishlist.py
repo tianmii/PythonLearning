@@ -3,6 +3,7 @@
 import os
 from typing import List
 
+
 def display_title_bar():
     os.system('cls')
     print("\t----------------------------------------------------------")
@@ -14,8 +15,9 @@ def get_user_choice():
     print('\n[1] The current wishlist.')
     print('[2] Please enter a new game you would like to add.')
     print('[q] Exit the Wishlist')
-#Forgot to add a return/got confused at line 43
+    # Forgot to add a return/got confused at line 43
     return input("\nWhat would you like to do? ")
+
 
 # WHEN THERE ARE VARIABLES, pass in the data in the () or else it won't be able to run independently
 # Need to be clear and [not make it globals ()]
@@ -24,6 +26,7 @@ def show_games(games: List[str]):
     print("\nHere is the current list:")
     for game in games:
         print(game.title())
+
 
 def get_new_game(games: List[str]):
     new_game = input("\nWhat new addition would you like to add: ")
@@ -34,9 +37,7 @@ def get_new_game(games: List[str]):
         print("{new} has been added.".format(new=new_game.title()))
 
 
-
-
-#################
+# --------------------------------
 
 games = []
 
