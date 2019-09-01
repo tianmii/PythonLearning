@@ -16,7 +16,7 @@ print(fav_list['pokemon'])
 
 # ----------------------------------------------
 # Monsters.... DICTIONARIES IN DICTIONARIES
-# original formatting was really bad to distinguish key: value
+# original formatting was confusing to distinguish key: value
 # {''type':'frenzy virus', 'variation': 'none', 'g-rank':True} <--madness on the eyes
 
 monsters = {
