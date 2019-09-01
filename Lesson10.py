@@ -1,18 +1,19 @@
 # Defining your own functions
-# for example, the print fuction print 2 lines
+# for example, the print function print 2 lines
+
 
 def thanks(name):
     print("Thanks, I hate it, {person}.".format(
         person=name
     ))
-    print("Yew did it.\n")
+    print("You did it.\n")
 
 
-thanks('NL')
-thanks('Rocklee')
-thanks('Josh')
+thanks('Jesse')
+thanks('Wallace')
+thanks('Yolanda')
 
-###### Two different methods of sorting a list ###
+# --------------- Two different methods of sorting a list -------------
 # First method
 trio = ['harry', 'hermione', 'ron']
 trio.sort()
@@ -26,9 +27,9 @@ for people in trio:
 
 
 # Second Method
-def show_trio(message, people):
+def show_trio(message, people_person):
     print(message)
-    for person in people:
+    for person in people_person:
         print(person.title())
 
 
@@ -39,13 +40,13 @@ trio.sort(reverse=True)
 show_trio("\nOur Hogwarts trio in reverse alphabetical order.", trio)
 
 
-### Cleaner code, defined 'show_trio()'
+# --------------Cleaner code, defined 'show_trio()'-------------------
 # Gave a list and message with a loop
 # After defining, can sort list and call function
-# Gabe's note: Order of importanc>
+# Gabe's note: Order of importance>
 # def function_name([1]important_variable, [2]less_variable)
 
-## Returning a value ##
+# -------------Returning a value--------------
 # Takes in a numerical value and returns
 # Word corresponding to that number
 # added else clause when python sees a
@@ -68,7 +69,7 @@ for current_numba in range(0, 6):
     print(current_numba, numba_word)
 
 
-## Greeter
+# Greeter
 # WRITE A FUNCTION: person name and greeting
 # Store 3 names in a list
 # call function in a for loop

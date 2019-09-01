@@ -35,7 +35,7 @@ values = ['python', 'c', 'java']
 value = values[2]
 print(value.lower())
 
-# tiresome way to write a sentene
+# tiresome way to write a sentence
 values = ['python', 'c', 'java']
 for value in values:
     print("A nice programming language is " + value.lower() + '.')

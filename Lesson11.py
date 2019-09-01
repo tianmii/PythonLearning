@@ -1,26 +1,28 @@
-#Addition calculator
+# Addition calculator
 # 2 numbers adds them, print out a sentence showing 2 numbers
 # call function with three times, with a different name each time
 
-def add2nums_print(message, numbers, numbers2):
-    print(message.format(numsum=sum(numbers)))
+
+def add2nums_print(message, numbers_int1, numbers_int2):
+    print(message.format(numsum=sum(numbers1)))
     print(message.format(numsum=sum(numbers2)))
+
 
 numbers = [2.5, 3, 4, 6, 7.5]
 numbers2 = [2, 4, 8, 7, 23]
 add2nums_print("The sum is {numsum}.", numbers, numbers2)
 
 
-def sum_num(x,y):
+def sum_num(x, y):
     print("{x} + {y} = {z}".format(
         x=x,
         y=y,
-        z=x+y,
+        z=x + y,
     ))
 
-sum_num(4,6)
-sum_num(5,7)
 
+sum_num(4, 6)
+sum_num(5, 7)
 
 # Testing with vim
 # If statements
@@ -42,14 +44,13 @@ for game in games:
     else:
         print("{good} is a good game.".format(good=game.title()))
 
-
-#Simple if statements with len()
+# Simple if statements with len()
 cats = ['tomo', 'ryuka', 'scuba', 'maru']
 
 if len(cats) > 3:
-    print("Wow, dats a lotta cats!")
+    print("Wow, that's a lot of cats!")
 
-#if else
+# if else
 icecreams = ['cinnamon', 'mint', 'hazelnut', 'pistachio']
 
 if len(icecreams) > 5:
@@ -60,17 +61,16 @@ else:
 flavors = ['cinnamon', 'milk', 'black sesame', 'cinnamon', 'hazelnut']
 
 if len(flavors) >= 5:
-    print("You can start an icrecream shoppe!")
+    print("You can start an icecream shoppe!")
 elif len(flavors) >= 3:
     print("Wow, lots of flavors!")
 else:
     print("Okay, that's not too many flavors.")
 
-
 flavors = ['cinnamon', 'milk', 'black sesame']
 
 if len(flavors) >= 5:
-    print("You can start an icrecream shoppe!")
+    print("You can start an icecream shoppe!")
 elif len(flavors) >= 3:
     print("Wow, lots of flavors!")
 else:
@@ -94,36 +94,36 @@ elif len(stranger) >= 1:
 else:
     print("There's not a lot of buddies.")
 
-#True & False values
-#Any non-zero or non-empty value is TRUE
+# True & False values
+# Any non-zero or non-empty value is TRUE
 if 0:
-    print("Dat droo.")
+    print("It's true.")
 else:
-    print("Dat false.")
+    print("It's false.")
 
-#Negative numbers are not zero
+# Negative numbers are not zero
 if -193:
-    print("Dis droo.")
+    print("It's true.")
 else:
-    print("Dat false.")
+    print("It's false.")
 
-#Empty string evaluates as false
+# Empty string evaluates as false
 if '':
-    print("Dis droo.")
+    print("It's true.")
 else:
-    print("Dat false.")
+    print("It's false.")
 
-#Any other string including a space is true
+# Any other string including a space is true
 if ' ':
-    print("Dis droo.")
+    print("It's true.")
 else:
-    print("Dat false.")
+    print("It's false.")
 
 # None is special object in python, evaluates as false
 if None:
-    print("Dis droo.")
+    print("It's true.")
 else:
-    print("Dat false.")
+    print("It's false.")
 
 #
 

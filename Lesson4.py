@@ -121,9 +121,9 @@ print(people)
 
 neopetusers = []
 
-neopetusers.append('tammy')
-neopetusers.append('gabe')
-neopetusers.append('uma')
+neopetusers.append('kristin')
+neopetusers.append('jenna')
+neopetusers.append('yolanda')
 
 for username in neopetusers:
     print('Welcome to Neopets, {a}!'.format(
@@ -139,7 +139,7 @@ pokemons.sort()
 for pokemon in pokemons:
     print(pokemon.title())
 
-pokemans = ['garbagio', 'eggboi', 'mathis']
+pokemans = ['charizard', 'squirtle', 'skitty']
 print(sorted(pokemans))
 print(pokemans)
 for pokeman in sorted(pokemans):

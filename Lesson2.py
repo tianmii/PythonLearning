@@ -2,18 +2,17 @@
 # two different ways, they are useful in different contexts
 
 
-butt = 9
-nutts = 7
+bolts = 9
+nuts = 7
 
 sentence = "The result of {x} + {y} = {z}".format(
-    x=butt,
-    y=nutts,
-    z=butt+nutts,
+    x=bolts,
+    y=nuts,
+    z=bolts+nuts,
 )
 print(sentence)
 
-sentence2 = f"The result of {butt} + {nutts} = {butt+nutts}"
+sentence2 = f"The result of {bolts} + {nuts} = {bolts+nuts}"
 print(sentence2)
 
-#Gebs is the best, but is also buttz and deez nuttz
 

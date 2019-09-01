@@ -30,7 +30,7 @@ for numbas in score:
         all=numbas
     ))
 
-##### Gymast score
+# -------------- Gymnast score -----------------
 # if else version so the sentence has correct grammar
 score = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
 print("The lowest possible score is {low}, and the highest possible score is {high}".format(
