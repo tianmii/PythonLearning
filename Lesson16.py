@@ -20,7 +20,7 @@ print("\nConfirmed avengers:")
 for avenger in confirmed_avengers:
     print("- {z}".format(z=avenger))
 
-#####
+# ---------------------
 current_numba = 1
 # count up to 6, printing the number each time
 while current_numba <= 6:
