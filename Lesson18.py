@@ -88,10 +88,10 @@ del game_facts['RAFoLOS']
 
 # print dictionary show key changed
 print(game_facts)
-################################################
+# --------------------------------------------
 
 # LOOPING THROUGH ALL KEY VALUE PAIRS
-###########
+
 
 my_dictionary = {'key_1': 'value_1',
                  'key_2': 'value_2',
