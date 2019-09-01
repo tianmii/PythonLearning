@@ -4,7 +4,7 @@ blanks = [
     "exclamation",
     "adverb",
     "noun",
-   "adjective",
+    "adjective",
 ]
 
 print("\nMad Libs the game! Fill in the blanks.")
