@@ -25,6 +25,7 @@ class Coin:
     #  def num_coins(self):
     #      return self.total_grams  / self.gram_per_coin
 
+
 # this is a class
 penny = Coin(name="penny", gram_per_coin=2.5, value_per_coin=1, total_grams=None)
 nickel = Coin(name="nickel", gram_per_coin=5.0, value_per_coin=5, total_grams=None)
