@@ -86,11 +86,11 @@ print(roach2.velocity)
 
 # The key attribute to self (self.x) is Hello
 # We now want to to add additional data to object
-# method_a allows us to attach foo in the below format
 class A(object):
     def __init__(self):
         self.x = 'Hello'
 
+    # method_a allows us to attach foo in the below format
     def method_a(self, foo):
         print(f'{self.x} {foo}')
 
