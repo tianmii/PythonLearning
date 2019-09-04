@@ -78,15 +78,50 @@ print("\n")
 roach2.bounce()
 print(roach2.velocity)
 
+
+# ---------------OOP (Object-Oriented Programming)-----------------
+# self represents the object of Class A as a Python 3 syntax by default
+# when there are multiple functions (methods) needed to shape object
+# Classes help organize the functions
+
+# The key attribute to self (self.x) is Hello
+# We now want to to add additional data to object
+# method_a allows us to attach foo in the below format
+class A(object):
+    def __init__(self):
+        self.x = 'Hello'
+
+    def method_a(self, foo):
+        print(f'{self.x} {foo}')
+
+    def method_b(self, boo):
+        # if you do not call an attribute to self in the function
+        # python will literally print you the memory location of
+        # the object (indecipherable to us mortals)
+        # <__main__.A object at 0x042EA250>, back atcha
+        # Hello, back atcha
+        print(f'{self}, {boo}')
+        print(f'{self.x}, {boo}')
+
+
+# Not passing any argument to __init__
+a = A()
+print("\n")
+# Pass a single argument by calling the function
+a.method_a('buddy!')
+b = A()
+print("\n")
+b.method_b('back atcha')
+
 # -------------Class Objects----------------
 
-class Bag:
-    def __init__(self):
-        self.data = []
-
-    def __add__(self, x):
-        self.data.append(x)
-
-    def addtwice(self, x):
-        self.add(x)
-        self.add(x)
+# class Bag:
+#     def __init__(self):
+#         self.data = []
+#
+#     def __add__(self, x):
+#         self.data.append(x)
+#
+#     def addtwice(self, x):
+#         self.add(x)
+#         self.add(x)
