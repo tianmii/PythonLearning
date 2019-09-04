@@ -49,8 +49,8 @@ class Roach(object):
 
     # we can add our own functions, when roach bounces,
     # its vertical velocity will be negated (no gravity here)
-    # def bounce(self):
-    #     self.velocity = (self.velocity[0]), -self.velocity[1])
+    def bounce(self):
+        self.velocity = self.velocity[0] - self.velocity[1]
 
 
 # now we have a ball class, how to use it?
@@ -62,7 +62,14 @@ print(roach1)
 
 # much more useful
 roach1.position = (200, 100)
+print("\n")
 print(roach1.position)
+
+roach2 = Roach()
+roach2.velocity = (5, 10)
+print("\n")
+print(roach2.velocity)
+print(roach2.position)
 
 
 # -------------Class Objects----------------
