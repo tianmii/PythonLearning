@@ -99,8 +99,8 @@ class A(object):
         # python will literally print you the memory location of
         # the object (indecipherable to us mortals)
         # <__main__.A object at 0x042EA250>, back atcha
-        # Hello, back atcha
         print(f'{self}, {boo}')
+        # Hello, back atcha
         print(f'{self.x}, {boo}')
 
 
