@@ -71,6 +71,12 @@ print("\n")
 print(roach2.velocity)
 print(roach2.position)
 
+print("\n")
+print(roach1.velocity)
+
+print("\n")
+roach2.bounce()
+print(roach2.velocity)
 
 # -------------Class Objects----------------
 
