@@ -1,10 +1,8 @@
-#I learned how to assign variables and print
-#() is the call function
+# I learned how to assign variables and print
+# () is the call function
 
-message = "Hi geyboob"
+message = "Hi people"
 print(message)
-
-
 
 first_name = 'ciri'
 
@@ -23,22 +21,22 @@ print("Let's actually  \tgo")
 
 print("Let's actually \ngo")
 
-name = '  yeet '
+name = '  monet '
 print(name.lstrip())
 print(name.rstrip())
 print(name.strip())
 
-print(6+9)
+print(6 + 9)
 
-standard_order = 4+3*8
-print (standard_order)
+standard_order = 4 + 3 * 8
+print(standard_order)
 
-my_order = (2+3)*4
+my_order = (2 + 3) * 4
 print(my_order)
 
-print(7*0.1)
+print(7 * 0.1)
 
-print(3/2)
+print(3 / 2)
 
 first_word = 'The'
 print(first_word)

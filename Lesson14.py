@@ -1,6 +1,6 @@
-#pokemon center computer
+# pokemon center computer
 
-print("\nTHank you for choosing Pokemon center system. Please look through the options.")
+print("\nThank you for choosing the Pokemon Center system. Please look through the options.")
 # set initial value for choice other than quit
 choice = ''
 # menu will print options to user
@@ -9,7 +9,7 @@ while choice != 'q':
     print("[2] Enter 2 to withdraw your pokemon.")
     print("[3] Enter 3 to arrange your pokemon.")
     print("[4] Enter 4 to access your items.")
-#Ask for the user's choice
+    # Ask for the user's choice
     choice = input("\nWhat would you like to do? ")
     if choice == '1':
         print("\nWhich pokemon would you like to deposit?\n")
@@ -23,4 +23,3 @@ while choice != 'q':
         print("\nThank you for using our systems.\n")
     else:
         print("\nPlease try another option.")
-
