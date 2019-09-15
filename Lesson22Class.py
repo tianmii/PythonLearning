@@ -33,6 +33,7 @@ print("Rocket altitude:", my_rocket.y)
 my_rocket.move_up()
 print("Rocket altitude:", my_rocket.y)
 
+
 # all objects are capable of the same behavior, but each object's particular action do not affect any other objects
 # here we make a fleet of rockets
 # DO NOT INCLUDE () for class unless it has a parent class-> class rocket(missile): so missile is the parent
@@ -65,6 +66,7 @@ my_ships[3].move_up
 for ship in my_ships:
     print("Ship altitude:", ship.y)
 
+
 # -------------------- LESSON TIME ---------------------------
 # object oriented programming allows you to build reusable blocks of code called CLASSES
 # gabe says "class Rocket(object):" is the old format Python 2, now it's included in "class Rocket:"
@@ -88,3 +90,25 @@ for ship in my_ships:
 # arbitrary dictionary of arguments or any combo of these
 # Each method has to accept one argument default, the value "self"
 # In this example, self argument is used to access a Ship object's y-value
+
+# -----------------------------------------------------------
+
+class Ship:
+
+    def _init_(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def move_ship(self, x_increment=0, y_increment=1):
+        self.x += x_increment
+        self.y += y_increment
+
+
+ships = [Ship() for x in range(0, 3)]
+
+ships[0].move_ship()
+ships[1].move_ship(10, 10)
+ships[2].move_ship(-10, 0)
+
+for index, rocket in enumerate(ships):
+    print('Ship {index}')
