@@ -4,9 +4,7 @@
 # Your statement could simply be, 'A nice programming language is value.'
 
 game = 'zelda'
-sentence = "I like the game {a}".format(
-    a=game,
-)
+sentence = f"I like the game {game}"
 
 #
 games = ['zelda', 'pokemon', 'kirby']
@@ -91,8 +89,8 @@ dags.append('gabe')
 for dag in dags:
     print(dag.title() + "s are cool.")
 
-####################################
-####old example in lesson 3
+#
+# old example in lesson 3
 for word in ['zelda', 'pokemon', 'kirby']:
     print('I like the game {a}'.format(
         a=word.lower()
@@ -108,8 +106,6 @@ for word in games:
     print('I like the game {}, {}'.format(
         word, 1
     ))
-#####################################
-#####################################
 
 # insert
 people = ['bayonetta', 'ciri', 'zelda']
