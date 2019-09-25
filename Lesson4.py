@@ -15,9 +15,7 @@ for word in games:
 
 # for word in games:
 for word in ['zelda', 'pokemon', 'kirby']:
-    print('I like the game {a}'.format(
-        a=word.lower()
-    ))
+    print(f'\nI like the game {word.lower()}')
 
 # messed up version
 # for word in enumerate(['zelda', 'pokemon', 'kirby']):
