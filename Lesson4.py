@@ -26,17 +26,11 @@ for word in ['zelda', 'pokemon', 'kirby']:
 
 # how to loop based on enumerate function using for ___, in enumerate([strings]):
 for idx, word in enumerate(['zelda', 'pokemon', 'kirby']):
-    print('{number}. I like the game {a}'.format(
-        a=word,
-        number=idx
-    ))
+    print(f'{idx}. I like the game {word}')
 
 #
-for idx, word in enumerate(['zelda', 'pokemon', 'kirby'], start=69):
-    print('{number}. I like the game {a}'.format(
-        a=word,
-        number=idx
-    ))
+for idx, word in enumerate(['zelda', 'pokemon', 'kirby'], start=12):
+    print(f'{idx}. I like the game {word}')
 
 #
 print()
