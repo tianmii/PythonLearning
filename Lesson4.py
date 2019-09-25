@@ -75,26 +75,14 @@ for dag in dags:
     print(f"{dag.title()}s are cool.")
 print()
 #
-# old example in lesson 3
-for word in ['zelda', 'pokemon', 'kirby']:
-    print(f'I like the game {word.lower()}')
 
-game = 'zelda'
-sentence = "I like the game {a}".format(
-    a=game,
-)
 
-games = ['zelda', 'pokemon', 'kirby']
-for word in games:
-    print('I like the game {}, {}'.format(
-        word, 1
-    ))
 
 # insert
 people = ['bayonetta', 'ciri', 'zelda']
 people.insert(1, 'aloy')
 print(people)
-
+print()
 ######
 # Defining an empty list
 
@@ -105,24 +93,24 @@ neopetusers.append('jenna')
 neopetusers.append('yolanda')
 
 for username in neopetusers:
-    print('Welcome to Neopets, {a}!'.format(
-        a=username.title()
-    ))
-
-    # Some errors, but i figured out most of .format!
-    # I forgot the last parentheses in line 137, was ")" originally
-    # Spelled as "usermame".....
+    print(f'Welcome to Neopets, {username.title()}!')
+print()
+# Some errors, but i figured out most of .format!
+# I forgot the last parentheses in line 137, was ")" originally
+# Spelled as "usermame".....
 
 pokemons = ['gengar', 'jigglypuff', 'lapras', 'bulbasaur', 'alakazam', 'jolteon']
 pokemons.sort()
 for pokemon in pokemons:
     print(pokemon.title())
+print()
 
 pokemans = ['charizard', 'squirtle', 'skitty']
 print(sorted(pokemans))
 print(pokemans)
 for pokeman in sorted(pokemans):
     print(pokeman.title())
+print()
 
 # length of a list
 horizon = ['aloy', 'rost', 'sylens', 'nora']
