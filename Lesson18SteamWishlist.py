@@ -31,10 +31,10 @@ def show_games(games: List[str]):
 def get_new_game(games: List[str]):
     new_game = input("\nWhat new addition would you like to add: ")
     if new_game in games:
-        print("\n{old} is already in the list.".format(old=new_game.title()))
+        print(f"\n{new_game.title()} is already in the list.")
     else:
         games.append(new_game)
-        print("{new} has been added.".format(new=new_game.title()))
+        print(f"{new_game.title()} has been added.")
 
 
 # --------------------------------
