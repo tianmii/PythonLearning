@@ -10,4 +10,4 @@ while new_game != 'quit':
     if new_game != 'quit':
         games.append(new_game)
 games_string = ', '.join(games)
-print("We both like {x}.".format(x=games_string))
+print(f"We both like {games_string}.")

@@ -17,7 +17,7 @@ for alien in aliens:
     if alien == "b":
         current_score += 15
 print(current_score)
-
+print()
 # While loop
 # Tests the initial condition, if condition is true
 # loop starts executing. Everytime loop finishes, the
