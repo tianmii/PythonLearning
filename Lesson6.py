@@ -80,9 +80,9 @@ for even in evens:
 
 tiger_mom = ['ocelot', 'leopard', 'lynx']
 MAAA = [
-    "{} the bad!".format(tiger.title())
+    f"{tiger.title()} the bad!"
     for tiger in tiger_mom
 ]
 
-for x in MAAA:
-    print("Hi, {}".format(x))
+for cats in MAAA:
+    print(f"Hi, {cats}")
