@@ -7,7 +7,7 @@
 As = ['ryan', 'k8', 'tomo', 'ryuka']
 
 for A in As:
-    print("It's me, " + A.title() + "!")
+    print(f"It's me {A.title()}!")
 
     As = ['ryan', 'k8', 'tomo', 'ryuka']
 
@@ -38,11 +38,11 @@ print(value.lower())
 # tiresome way to write a sentence
 values = ['python', 'c', 'java']
 for value in values:
-    print("A nice programming language is " + value.lower() + '.')
+    print(f"A nice programming language is {value.lower()}.")
 
 values = ['python', 'c', 'java']
 value = values[1]
-print("One item on my list is " + value.lower() + '.')
+print(f"One item on my list is {value.lower()}.")
 
 cats = ['ryuka', 'tomo', 'guppy', 'tammy']
 for cat in cats:
@@ -50,23 +50,23 @@ for cat in cats:
 
 cats = ['ryuka', 'tomo', 'guppy', 'tammy']
 for cat in cats:
-    print('I like ' + cat.title() + '.')
+    print(f"I like {cat.title()}.")
 
 cats = ['british shorthair', 'domestic shorthair']
 for cat in cats:
-    print("I like " + cat + "s.")
-    print("No, I really really like " + cat + "s!\n")
+    print(f"\nI like {cat}s!")
+    print(f"No, I really really like {cat}s!")
 
-print("\nThats just how I feel about cats.")
+print("\nThat's just how I feel about cats.")
 
 # DO THIS INSTEAD
 # best way to avoid errors, you're typing the sentence as you
 # normally would
-sentence = "I really like {a}, {b}, and {c}".format(
-    a='british shorthairs',
-    b='domestic shorthairs',
-    c='ragdolls',
-)
+
+bs = 'british shorthairs'
+ds = 'domestic shorthairs'
+rag = 'ragdolls'
+sentence = f"I really like {bs}, {ds}, and {rag}"
 print(sentence)
 
 # Exercises
@@ -77,6 +77,7 @@ cats = ['ryuka', 'tomo', 'guppy']
 a = cats[0]
 b = cats[1]
 c = cats[2]
+print("\n")
 print(a, b, c)
 
 # First Neat List
@@ -85,9 +86,8 @@ print(a, b, c)
 # Your statement could simply be, 'A nice programming language is value.'
 
 game = 'zelda'
-sentence = "I like the game {a}".format(
-    a=game,
-)
+sentence = f"\nI like the game {game}"
+
 print(sentence)
 
 games = ['zelda', 'pokemon', 'kirby']
@@ -98,9 +98,7 @@ for word in games:
 
 # for word in games:
 for word in ['zelda', 'pokemon', 'kirby']:
-    print('I like the game {a}'.format(
-        a=word.lower()
-    ))
+    print(f"I like the game {word.lower()}")
 
 # messed up version
 # for word in enumerate(['zelda', 'pokemon', 'kirby']):
@@ -109,31 +107,19 @@ for word in ['zelda', 'pokemon', 'kirby']:
 # ))
 
 for idx, word in enumerate(['zelda', 'pokemon', 'kirby']):
-    print('{number}. I like the game {a}'.format(
-        a=word,
-        number=idx
-    ))
+    print(f"{idx}. I like the game {word}")
 
-for idx, word in enumerate(['zelda', 'pokemon', 'kirby'], start=69):
-    print('{number}. I like the game {a}'.format(
-        a=word,
-        number=idx
-    ))
+for idx, word in enumerate(['zelda', 'pokemon', 'kirby'], start=15):
+    print(f"{idx}. I like the game {word}")
 
 print()
 for tup in enumerate(['zelda', 'pokemon', 'kirby']):
     print(tup)
     idx = tup[0]
     word = tup[1]
-    print('{number}. I like the game {a}'.format(
-        a=word,
-        number=idx
-    ))
+    print(f"{idx}. I like the game {word}")
 print()
 
 for idx, word, *_ in [('zelda', 5, 12), ('pokemon', 9, 14, 80, 100, 3333), ('kirby', 100, 200, 300)]:
-    print('{number}. I like the game {a}.'.format(
-        a=word,
-        number=idx,
-        # that=thing,
-    ))
+    print(f"{idx}. I like the game {word}.")
+    # that=thing,
