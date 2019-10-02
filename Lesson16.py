@@ -6,7 +6,7 @@ while len(unconfirmed_avengers) > 0:
     # Literally POPPING the unconfirmed list items INTO Current
     # Because the while condition is True
     current_avenger = unconfirmed_avengers.pop(0)
-    print("Confirming avenger {x}...confirmed.".format(x=current_avenger))
+    print(f"Confirming avenger {current_avenger}...confirmed.")
     # appending the current avengers into confirmed
     confirmed_avengers.append(current_avenger)
 # Returns as empty because the while condition ran through and emptied unconfirmed list
@@ -15,10 +15,10 @@ while len(unconfirmed_avengers) > 0:
 # confirmed avengers = ['captain america', 'thor', 'iron man', 'hulk']
 print("\nUnconfirmed avengers:")
 for avenger in unconfirmed_avengers:
-    print("- {y}".format(y=avenger))
+    print(f"- {avenger}")
 print("\nConfirmed avengers:")
 for avenger in confirmed_avengers:
-    print("- {z}".format(z=avenger))
+    print(f"- {avenger}")
 
 # ---------------------
 current_numba = 1
