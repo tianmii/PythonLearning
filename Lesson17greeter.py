@@ -30,7 +30,7 @@ def show_names():
 def get_new_name():
     new_name = input("\nPlease tell me this person's name: ")
     names.append(new_name)
-    print("\nI can't wait to meet {new}!\n".format(new=new_name.title()))
+    print(f"\nI can't wait to meet {new_name.title()}!\n")
 
 
 # MAIN PROGRAM
