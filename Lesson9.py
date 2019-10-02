@@ -27,6 +27,7 @@ for numbas in score:
 
 # -------------- Gymnast score -----------------
 # if else version so the sentence has correct grammar
+print()
 score = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
 print(f"The lowest possible score is {score[0]}, and the highest possible score is {score[-1]}")
 for numbas in score:
