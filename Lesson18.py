@@ -15,8 +15,8 @@ python_words = {'list': 'A collection of values that are not connected, but have
 
 # Print out the items in the dictionary.
 for word, meaning in python_words.items():
-    print("\nWord: {word}".format(word=word))
-    print("Meaning: {meaning}".format(meaning=meaning))
+    print(f"\nWord: {word}")
+    print(f"Meaning: {meaning}")
 
 # ---------------------------------------------
 game_words = {'gore magala': 'The eyes have not developed and relies on the Frenzy Virus to hunt.',
@@ -27,37 +27,35 @@ game_words = {'gore magala': 'The eyes have not developed and relies on the Fren
               }
 
 for word, description in game_words.items():
-    print("\nMonster: {monster}".format(monster=word.title()))
-    print("Description: {sentence}".format(sentence=description))
+    print(f"\nMonster: {word.title()}")
+    print(f"Description: {description}")
 
 # empty dictionary
 animal_facts = {}
 
-# Fill fictionary, pair by pair
-animal_facts['millipedes'] = 'They are roly polies and danger noodles combined into one.'
+# Fill dictionary, pair by pair
+animal_facts['millipedes'] = 'They are roly polies and snakes combined into one.'
 animal_facts['bats'] = 'Bats are bugs.'
 animal_facts['martins'] = 'Super cute ferrets.'
 
 for animal, fact in animal_facts.items():
-    print("\nAnimal: {animal}".format(animal=animal.title()))
-    print("Fact: {fact}".format(fact=fact))
+    print(f"\nAnimal: {animal.title()}")
+    print(f"Fact: {fact}")
 
 
 # ------------------------------------
 # USE DEF AND LABEL THEM, NO GLOBAL
 # -----------------------------------
 
-def show_game_facts(game_facts):
+def show_game_facts(game_factoid):
     # This function takes in a dictionary of animal names and facts
     # prints each word with meaning
-    print("\nThese are the animal facts I know:")
-    for game, fact in game_facts.items():
+    print("\nThese are the Monster Hunter facts I know:")
+    for game, facts in game_factoid.items():
         # THIS PART IS MUCH CLEANER vs earlier typing out the literal words like
         # Animal: Bats, Fact: They fly VERSUS
         # Bats: They fly
-        print("\n{game}: {fact}".format(
-            game=game.title(),
-            fact=fact))
+        print(f"{game.title()}: {facts}")
 
 
 game_facts = {'gore magala': 'The eyes have not developed and relies on the Frenzy Virus to hunt.',
@@ -99,5 +97,5 @@ my_dictionary = {'key_1': 'value_1',
                  }
 
 for key, value in my_dictionary.items():
-    print("\n{new_key}: {new_key}".format(new_key=key))
-    print("\n{new_value}: {new_value}".format(new_value=value))
+    print(f"\n{key}: {key}")
+    print(f"\n{value}: {value}")
