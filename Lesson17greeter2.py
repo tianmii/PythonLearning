@@ -36,7 +36,7 @@ def get_new_name():
     # Asks the user for a new name and stores the name.
     new_name = input("\nA new foe has appeared: ")
     names.append(new_name)
-    print("\n{new} has joined the battle!\n".format(new=new_name.title()))
+    print(f"\n{new_name.title()} has joined the battle!\n")
 
 
 # MAIN PROGRAM
