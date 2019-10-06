@@ -11,38 +11,27 @@ print("The foist color is: {first}".format(
 
 print("\nThe available colors are:")
 for color in colors:
-    print("- {all}".format(all=color))
+    print(f"- {color}")
 
 # Str numbers
-numba = 69
-print("My favorite numba is {num}. ;)".format(
-    num=str(numba)
-))
-
+numba = 13
+print(f"My favorite numba is {str(numba)}.")
+print()
 # Gymast score
 score = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
-print("The lowest possible score is {low}, and the highest possible score is {high}".format(
-    low=score[0],
-    high=score[-1],
-))
+print(f"The lowest possible score is {score[0]}, and the highest possible score is {score[-1]}")
+
+print()
 for numbas in score:
-    print("A judge can give a gymnast {all} points.".format(
-        all=numbas
-    ))
+    print(f"A judge can give a gymnast {numbas} points.")
 
 # -------------- Gymnast score -----------------
 # if else version so the sentence has correct grammar
+print()
 score = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
-print("The lowest possible score is {low}, and the highest possible score is {high}".format(
-    low=score[0],
-    high=score[-1],
-))
+print(f"The lowest possible score is {score[0]}, and the highest possible score is {score[-1]}")
 for numbas in score:
     if numbas == '1':
-        print("A judge can give a gymnast {single} point.".format(
-            single=numbas
-        ))
+        print(f"A judge can give a gymnast {numbas} point.")
     else:
-        print("A judge can give a gymnast {all} points.".format(
-            all=numbas
-        ))
+        print(f"A judge can give a gymnast {numbas} points.")

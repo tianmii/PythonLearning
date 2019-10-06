@@ -38,13 +38,10 @@ monsters = {
 }
 
 for monster_name, monster_type in monsters.items():
-    print("\nHere is some information about {monster_name}".format(monster_name=monster_name.title()))
+    print(f"\nHere is some information about {monster_name.title()}")
     for key in monster_type:
         if key == 'type':
-            print("{key_type}: {monster_type_value}".format(
-                key_type=key,
-                monster_type_value=(monster_type[key]),
-            ))
+            print(f"{key}: {monster_type[key]}")
         elif key == 'g-rank':
             # Example how variable string can't be named g-rank>g_rank
             g_rank = monster_type['g-rank']
@@ -56,7 +53,4 @@ for monster_name, monster_type in monsters.items():
         # else:
         # print(key + ": " + str(monster_type[key])) orignal format......
         # hard to read and no longer have to add "str()"
-        # print("{key}: {monster_type_value}".format(
-        # key=key,
-        # monster_type_value=(monster_type[key]),
-        # ))
+        # print(f"{key}: {monster_type[key]}")

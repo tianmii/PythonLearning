@@ -3,14 +3,18 @@
 # call function with three times, with a different name each time
 
 
-def add2nums_print(message, numbers_int1, numbers_int2):
-    print(message.format(numsum=sum(numbers1)))
-    print(message.format(numsum=sum(numbers2)))
-
-
-numbers = [2.5, 3, 4, 6, 7.5]
-numbers2 = [2, 4, 8, 7, 23]
-add2nums_print("The sum is {numsum}.", numbers, numbers2)
+# def numbers1(args):
+#     pass
+#
+#
+# def add2nums_print(message, numbers_int1, numbers_int2):
+#     print(message.format(numsum=sum(numbers1)))
+#     print(message.format(numsum=sum(numbers2)))
+#
+#
+# numbers = [2.5, 3, 4, 6, 7.5]
+# numbers2 = [2, 4, 8, 7, 23]
+# add2nums_print(f"The sum is {numsum}.", numbers, numbers2)
 
 
 def sum_num(x, y):
@@ -26,31 +30,34 @@ sum_num(5, 7)
 
 # Testing with vim
 # If statements
-
-desserts = ['waffos', 'donuts', 'speculoos', 'mochi']
+print()
+desserts = ['waffles', 'donuts', 'speculoos', 'mochi']
 fav_dessert = 'speculoos'
 
 for dessert in desserts:
     if dessert == fav_dessert:
-        print("{fav} is favorite dessert!".format(fav=dessert.title()))
+        print(f"{dessert.title()} is my favorite dessert!")
     else:
-        print("I like {good} dessert.".format(good=dessert.title()))
+        print(f"I like {dessert.title()} dessert.")
 
+print()
 games = ['planet robobot', 'pokemon x', 'link between worlds']
 fav_game = 'link between worlds'
 for game in games:
     if game == fav_game:
-        print("{fav} is my favorite game!".format(fav=game.title()))
+        print(f"{game.title()} is my favorite game!")
     else:
-        print("{good} is a good game.".format(good=game.title()))
+        print(f"{game.title()} is a good game.")
 
 # Simple if statements with len()
+print()
 cats = ['tomo', 'ryuka', 'scuba', 'maru']
 
 if len(cats) > 3:
     print("Wow, that's a lot of cats!")
 
 # if else
+print()
 icecreams = ['cinnamon', 'mint', 'hazelnut', 'pistachio']
 
 if len(icecreams) > 5:
@@ -59,15 +66,6 @@ else:
     print("Okay that's a reasonable amount of flavors.")
 
 flavors = ['cinnamon', 'milk', 'black sesame', 'cinnamon', 'hazelnut']
-
-if len(flavors) >= 5:
-    print("You can start an icecream shoppe!")
-elif len(flavors) >= 3:
-    print("Wow, lots of flavors!")
-else:
-    print("Okay, that's not too many flavors.")
-
-flavors = ['cinnamon', 'milk', 'black sesame']
 
 if len(flavors) >= 5:
     print("You can start an icecream shoppe!")
@@ -94,6 +92,7 @@ elif len(stranger) >= 1:
 else:
     print("There's not a lot of buddies.")
 
+print()
 # True & False values
 # Any non-zero or non-empty value is TRUE
 if 0:
@@ -126,7 +125,7 @@ else:
     print("It's false.")
 
 #
-
+print()
 horizon = ["aloy", "rost", "sylens"]
 donezo = False
 while not donezo:

@@ -17,7 +17,7 @@ for alien in aliens:
     if alien == "b":
         current_score += 15
 print(current_score)
-
+print()
 # While loop
 # Tests the initial condition, if condition is true
 # loop starts executing. Everytime loop finishes, the
@@ -34,19 +34,15 @@ print(current_score)
 
 energy = 5
 while energy > 0:
-    print("Your power is {num}.".format(
-        num=energy
-    ))
+    print(f"Your power is {energy}.")
     energy = energy - 1
-print("\nOh noes, yew ded. Stay determined!")
+print("\nOh no, you're ded. Stay determined!")
 
 strength = 5
 while strength < 12:
-    print("Your current powa is {num}.".format(
-        num=strength
-    ))
+    print(f"Your current power is {strength}.")
     strength += 2
-print("\nYew tew strong.")
+print("\nYou're too strong.")
 
 # input function "input('')" = standard input or TERMINAL interaction
 # standard output is printing something
@@ -61,7 +57,7 @@ print("\nYew tew strong.")
 botw = ["link", "zelda", "sidon"]
 done = False
 while not done:
-    new_botw = input("Please tell tell me someone I should know:")
+    new_botw = input("Please tell tell me someone I should know in botw:")
     if new_botw == "mario":
         done = True
     else:
