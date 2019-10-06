@@ -60,7 +60,7 @@ print_new_monster_info(
 )
 
 # lesson from gabe when eventually your function gets more complicated than printing simple statements
-# if there is math involved, you want to seperate into class
+# if there is math involved, you want to separate into class
 from dataclasses import dataclass
 
 
