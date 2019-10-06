@@ -1,9 +1,10 @@
 # Kwargs
 
+
 def character_info(name, game, **kwargs):
     print("Name: {chara_name}".format(chara_name=name.title()))
     print("Game: {chara_game}".format(chara_game=game.title()))
-    #optional info
+    # optional info
     for key in kwargs:
         print("{key_title}: {kwarg_key}".format(
             # added .replace('_', ' ') so key title didn't have _
@@ -12,6 +13,7 @@ def character_info(name, game, **kwargs):
             kwarg_key=kwargs[key].title(),
         ))
     print('\n')
+
 
 character_info(
     'link',
