@@ -89,7 +89,7 @@ print_new_monster_info_dc(
 # arbitrary number of arguments
 def subtracter(num_1, num_2):
     sum = num_1 - num_2
-    print("The sum of the numbers is {numsum}.".format(numsum=sum))
+    print(f"The sum of the numbers is {sum}.")
 
 
 subtracter(999, 363)
@@ -125,7 +125,7 @@ def subtracter2(num_1, num_2, *nums):
     sum = num_1 - num_2
     for num in nums:
         sum = num - sum
-    print("\nThe sum of your numbers is {final_sum}".format(final_sum=sum))
+    print(f"\nThe sum of your numbers is {sum}")
 
 
 subtracter2(1, 2, 3)
@@ -133,16 +133,16 @@ subtracter2(-4, -3, -2)
 subtracter2(50, 20, 70)
 
 
-##### KWARGS #########
-#### Accepting an arbitrary number of key-value arguments
-## key-values stored in a dictionary and looped
-# Two asteriks '**' tells Python to collect all remaing
+# KWARGS
+# Accepting an arbitrary number of key-value arguments
+# key-values stored in a dictionary and looped
+# Two asterisks '**' tells Python to collect all remaining
 def example_function_kwarg(arg_1, arg_2, **kwargs):
     print('\narg_1:', arg_1)
     print('arg_2:', arg_2)
     # dealing with Tuples, only cared about value, not key
-    # replaced 'key' vairable with '_' so no linting problem
-    # yellow squiggle of an unued variable
+    # replaced 'key' variable with '_' so no linting problem
+    # yellow squiggle of an unused variable
     for _, value in kwargs.items():
         print('arg_3 value:', value)
 
