@@ -4,7 +4,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 import sys
-
 sys.path.append("C:\\Users\\tianm\\Selenium\\")
 
 # Create new instance of Chrome driver
