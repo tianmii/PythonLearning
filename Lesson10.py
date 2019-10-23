@@ -3,9 +3,7 @@
 
 
 def thanks(name):
-    print("Thanks, I hate it, {person}.".format(
-        person=name
-    ))
+    print(f"Thanks, I hate it, {name}.")
     print("You did it.\n")
 
 
