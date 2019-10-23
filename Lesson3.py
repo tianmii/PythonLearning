@@ -122,4 +122,4 @@ print()
 
 for idx, word, *_ in [('zelda', 5, 12), ('pokemon', 9, 14, 80, 100, 3333), ('kirby', 100, 200, 300)]:
     print(f"{idx}. I like the game {word}.")
-    # that=thing,
+

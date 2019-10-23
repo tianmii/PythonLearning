@@ -106,9 +106,7 @@ print(numbas)
 # store the first million numbers in a list
 numbas = list(range(1, 1000001))
 # length of list
-sentence = ("The list numbas has {a} numbas in it.".format(
-    a=str(len(numbas))
-))
+sentence = f"The list numbas has {str(len(numbas))} numbas in it."
 print(sentence)
 # shows last 10 numbers
 # The expression: str(len(numbers)) takes the length
@@ -124,15 +122,9 @@ ages = [13, 18, 21, 45, 69]
 youngest = min(ages)
 oldest = max(ages)
 total_years = sum(ages)
-print("Our youngest reader is {a} years old".format(
-    a=youngest
-))
-print("Our oldest reader is {b} years old".format(
-    b=oldest
-))
-print("Together, we have {c} years worth of life experience.".format(
-    c=total_years
-))
+print(f"Our youngest reader is {youngest} years old")
+print(f"Our oldest reader is {oldest} years old")
+print(f"Together, we have {total_years} years worth of life experience.")
 
 # First Twenty
 first_20 = list(range(1, 21))
@@ -143,12 +135,6 @@ skinniest = min(wallets)
 fattest = max(wallets)
 total = sum(wallets)
 
-print("The fattest wallet has ${a} in it.".format(
-    a=skinniest
-))
-print("The skinniest wallet has ${b} in it.".format(
-    b=fattest
-))
-print("All together, these wallets have ${c} in them.".format(
-    c=total
-))
+print(f"The fattest wallet has ${skinniest} in it.")
+print(f"The skinniest wallet has ${fattest} in it.")
+print(f"All together, these wallets have ${total} in them.")
