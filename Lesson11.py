@@ -18,11 +18,7 @@
 
 
 def sum_num(x, y):
-    print("{x} + {y} = {z}".format(
-        x=x,
-        y=y,
-        z=x + y,
-    ))
+    print(f"{x} + {y} = {x + y}")
 
 
 sum_num(4, 6)
