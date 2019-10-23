@@ -2,16 +2,13 @@
 
 
 def character_info(name, game, **kwargs):
-    print("Name: {chara_name}".format(chara_name=name.title()))
-    print("Game: {chara_game}".format(chara_game=game.title()))
+    print(f"Name: {name.title()}")
+    print(f"Game: {game.title()}")
     # optional info
     for key in kwargs:
-        print("{key_title}: {kwarg_key}".format(
+        print(f"{key.title().replace('_', ' ')}: {kwargs[key].title()}")
             # added .replace('_', ' ') so key title didn't have _
             # favorite_animal becomes Favorite Animal
-            key_title=key.title().replace('_', ' '),
-            kwarg_key=kwargs[key].title(),
-        ))
     print('\n')
 
 
@@ -32,5 +29,5 @@ character_info(
     'geralt',
     'witcher 3',
     favorite_daughter='ciri',
-    wticher_school='wolf',
+    witcher_school='wolf',
 )
