@@ -5,9 +5,7 @@
 # can still use for loop
 
 colors = ('chartreuse', 'mahogany', 'greige')
-print("The foist color is: {first}".format(
-    first=colors[0]
-))
+print(f"The first color is: {colors[0]}")
 
 print("\nThe available colors are:")
 for color in colors:
