@@ -9,9 +9,7 @@ print()
 #
 games = ['zelda', 'pokemon', 'kirby']
 for word in games:
-    print('I like the game {}, {}'.format(
-        word, 1
-    ))
+    print(f"I like the game {word}, {1}")
 print()
 # for word in games:
 for word in ['zelda', 'pokemon', 'kirby']:
@@ -50,9 +48,7 @@ print()
 # different way of writing the list {} does not have to have a word in it
 # as long as the format ordering is correct
 for idx, word in enumerate(['zelda', 'pokemon', 'kirby']):
-    print('{}. I like the game {}'.format(
-        idx, word
-    ))
+    print(f"{idx}. I like the game {word}")
 print()
 #
 for num, name in enumerate(['ciri', 'geralt', 'dandelion'], start=1):
