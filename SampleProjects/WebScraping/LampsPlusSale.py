@@ -9,6 +9,8 @@ def calendar_date_time():
 # driver.get("https://www.lampsplus.com/products/aaron-aged-brass-3-light-floor-lamp__1k778.html")
 def sale_check(url):
     driver = webdriver.Chrome()
+    # Gabe: .get() could throw an exception, in which case you'd
+    # probably want to close()/quit(), right?
     driver.get(url)
     try:
         lamp_name = driver.find_element_by_xpath("//*[@id='h1ProductName']")
@@ -20,12 +22,12 @@ def sale_check(url):
         for item in items:
             savings_text = item.text
             print(f"{savings_text}\n")
-            driver.close()
     except:
         print("There are no sales today.\n")
-        driver.close()
     finally:
+        driver.close()
         driver.quit()
+        print("Test Completed")
 
 # @classmethod
 # def tearDownClass(cls):
