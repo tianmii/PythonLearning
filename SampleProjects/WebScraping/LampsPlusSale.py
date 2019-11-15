@@ -27,7 +27,6 @@ def sale_check(url):
     finally:
         driver.close()
         driver.quit()
-        print("Test Completed")
 
 # @classmethod
 # def tearDownClass(cls):
