@@ -2,6 +2,7 @@ from selenium import webdriver
 import datetime
 import unittest
 
+# 1. Run > Edit Configurations
 class LampPlusSale(unittest.TestCase):
     def calendar_date_time(self):
         print(f"{datetime.datetime.now():Today's LampsPlus Sale date is %b %d, %Y}")
