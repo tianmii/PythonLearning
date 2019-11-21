@@ -8,7 +8,7 @@ try:
     # for item in item_price:
     #     print(f"{item.text}\n")
 
-    item_price = driver.find_elements_by_class_name("a-section price-section")
+    item_price = driver.find_elements_by_class_name("a-price")
     for item in item_price:
         print(f"{item.text}\n")
 finally:
