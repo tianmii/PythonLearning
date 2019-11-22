@@ -1,8 +1,8 @@
 from selenium import webdriver
 
 def sale_checker(url):
+    driver = webdriver.Chrome()
     try:
-        driver = webdriver.Chrome()
         driver.get(url)
         # name
         lamp_name = driver.find_element_by_xpath("//*[@id='h1ProductName']")
@@ -19,6 +19,7 @@ def sale_checker(url):
     except:
         print("There is no sale today.\n")
     finally:
+        driver.close()
         print("Test complete.")
 
 

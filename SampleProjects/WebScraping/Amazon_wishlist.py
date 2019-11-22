@@ -3,18 +3,17 @@ import time
 driver = webdriver.Chrome()
 driver.get("https://www.amazon.com/hz/wishlist/ls/1D7C42EMM4RMP?ref_=wl_share")
 
+print("asdf")
 try:
-    # item_price = driver.find_elements_by_class_name("a-list-item")
-    # for item in item_price:
-    #     print(f"{item.text}\n")
+    item_sale = driver.find_elements_by_class_name("itemPriceDrop")
+    if item_sale is True:
+        for sale in item_sale:
+            print(sale.text)
 
-    item_price = driver.find_elements_by_class_name("a-price")
-    for item in item_price:
-        print(f"{item.text}\n")
-finally:
-    time.sleep(2)
-    print("Test Complete")
-    driver.close()
+# finally:
+#     time.sleep(2)
+#     print("Test Complete")
+#     driver.close()
 
 
 
@@ -23,6 +22,26 @@ finally:
 # item_names = driver.find_elements_by_xpath("//*[@id='itemName_I2HIELKIL93978']")
 # for item in item_names:
 #     print(item.text)
+
+# try:
+#     item_price = driver.find_elements_by_class_name("a-list-item")
+#     for item in item_price:
+#         print(f"{item.text}\n")
+
+
+
+# try:
+#     item_price = driver.find_elements_by_class_name("a-text-bold")
+#     for item in item_price:
+#         print(f"{item.text}\n")
+    # item_name = driver.find_elements_by_class_name("a-link-normal")
+
+    # for name in item_name:
+    #     print(f"{name.text}")
+
+    # item_price = driver.find_elements_by_class_name("a-price")
+    # for price in item_price:
+    #     print(f"{price.text}\n")
 
 
 
