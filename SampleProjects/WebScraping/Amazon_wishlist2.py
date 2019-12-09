@@ -10,8 +10,8 @@ try:
     # item_names = parent_class.find_elements_by_class_name("a-list-item")
     item_sales = parent_class.find_elements_by_class_name("itemPriceDrop")
     if item_sales:
-        for name in item_names:
-            print(f"{name.text}\n")
+        for sales in item_sales:
+            print(f"{sales.text}\n")
 
     # print(parent_class.text)
 
