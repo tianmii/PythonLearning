@@ -4,7 +4,6 @@ import time
 driver = webdriver.Chrome()
 driver.get("https://www.amazon.com/hz/wishlist/ls/1D7C42EMM4RMP?ref_=wl_share")
 
-
 try:
     parent_class = driver.find_element_by_id("item-page-wrapper")
     item_names = parent_class.find_elements_by_class_name("a-column")
@@ -33,14 +32,12 @@ finally:
 #         driver.close()
 
 
-
 # try:
 #     urls = driver.find_elements_by_tag_name("a").get_attribute('href')
 #     for url in urls:
 #         print(url.text)
-    # item_sale = driver.find_elements_by_class_name("itemPriceDrop")
+# item_sale = driver.find_elements_by_class_name("itemPriceDrop")
 
 
-    # for sale in item_sale:
-    #     print(sale.text)
-
+# for sale in item_sale:
+#     print(sale.text)
