@@ -7,11 +7,11 @@ driver.get("https://www.amazon.com/hz/wishlist/ls/1D7C42EMM4RMP?ref_=wl_share")
 
 try:
     parent_class = driver.find_element_by_id("item-page-wrapper")
-    # item_names = parent_class.find_elements_by_class_name("a-list-item")
+    item_names = parent_class.find_elements_by_class_name("a-column")
     item_sales = parent_class.find_elements_by_class_name("itemPriceDrop")
     if item_sales:
-        for sales in item_sales:
-            print(f"{sales.text}\n")
+        for name in item_names:
+            print(f"{name.text}\n")
 
     # print(parent_class.text)
 
