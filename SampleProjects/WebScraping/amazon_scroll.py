@@ -20,7 +20,7 @@ try:
     parent_class = driver.find_element_by_id("item-page-wrapper")
     item_names = parent_class.find_elements_by_class_name("a-column")
     item_sales = parent_class.find_elements_by_class_name("itemPriceDrop")
-    if item_sales and item_names == True:
+    if item_sales in item_names:
         for names in item_names:
             print (names.text)
 

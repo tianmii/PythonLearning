@@ -24,10 +24,12 @@ def amazon_wishlist():
     try:
         parent_class = driver.find_element_by_id("item-page-wrapper")
         item_names = parent_class.find_elements_by_class_name("a-column")
-        item_sales = parent_class.find_elements_by_class_name("itemPriceDrop")
-        if item_sales:
-            for name in item_names:
+        # item_sales = parent_class.find_elements_by_class_name("itemPriceDrop")
+        # if string"Price Dropped":
+        for name in item_names:
+            if "price dropped" in name.text.lower():
                 print(f"{name.text}\n")
+                # print("price dropped" in name.text.lower())
     finally:
         time.sleep(1)
         print("Test Complete")
