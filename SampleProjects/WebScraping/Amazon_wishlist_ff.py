@@ -24,8 +24,8 @@ def amazon_wishlist():
     try:
         parent_class = driver.find_element_by_id("item-page-wrapper")
         item_names = parent_class.find_elements_by_class_name("a-column")
+        # could not link item_sales to item_names in the if statement
         # item_sales = parent_class.find_elements_by_class_name("itemPriceDrop")
-        # if string"Price Dropped":
         for name in item_names:
             if "price dropped" in name.text.lower():
                 print(f"{name.text}\n")
