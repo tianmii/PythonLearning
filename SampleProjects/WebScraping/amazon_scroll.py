@@ -15,4 +15,14 @@ while True:
     if new_height == last_height:
         break
     last_height = new_height
-driver.close()
+
+try:
+    parent_class = driver.find_element_by_id("item-page-wrapper")
+    item_names = parent_class.find_elements_by_class_name("a-column")
+    item_sales = parent_class.find_elements_by_class_name("itemPriceDrop")
+    if item_sales:
+        for names in item_names and item_sales:
+            print (names.text)
+
+finally:
+    driver.close()
