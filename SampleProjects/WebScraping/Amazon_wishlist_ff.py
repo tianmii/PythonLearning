@@ -6,7 +6,7 @@ driver.get("https://www.amazon.com/hz/wishlist/ls/1D7C42EMM4RMP?ref_=wl_share")
 
 
 def popup_time_wait():
-    time.sleep(7)
+    time.sleep(5)
 
 
 def scroll_time():
